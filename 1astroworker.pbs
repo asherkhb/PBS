@@ -58,6 +58,7 @@ module load python
 ### set directory for job execution, ~netid = home directory path
 ### cd ~ahaug/
 cd /rsgrps/ericlyons/scratch
+mkdir -p temp
 
 ### run your executable program with begin and end date and time output
 date
