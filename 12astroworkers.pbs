@@ -62,18 +62,16 @@ mkdir -p temp
 
 ### run your executable program with begin and end date and time output
 date
-WORKQUEUENAME="atp"
-WORKQUEUEPASS="~ahaug/wqpass"
-work_queue_worker -N $WORKQUEUENAME -P $WORKQUEUEPASS
-work_queue_worker -N $WORKQUEUENAME -P $WORKQUEUEPASS
-work_queue_worker -N $WORKQUEUENAME -P $WORKQUEUEPASS
-work_queue_worker -N $WORKQUEUENAME -P $WORKQUEUEPASS
-work_queue_worker -N $WORKQUEUENAME -P $WORKQUEUEPASS
-work_queue_worker -N $WORKQUEUENAME -P $WORKQUEUEPASS
-work_queue_worker -N $WORKQUEUENAME -P $WORKQUEUEPASS
-work_queue_worker -N $WORKQUEUENAME -P $WORKQUEUEPASS
-work_queue_worker -N $WORKQUEUENAME -P $WORKQUEUEPASS
-work_queue_worker -N $WORKQUEUENAME -P $WORKQUEUEPASS
-work_queue_worker -N $WORKQUEUENAME -P $WORKQUEUEPASS
-work_queue_worker -N $WORKQUEUENAME -P $WORKQUEUEPASS
+work_queue_worker -N atp -P ~ahaug/wqpass
+work_queue_worker -N atp -P ~ahaug/wqpass
+work_queue_worker -N atp -P ~ahaug/wqpass
+work_queue_worker -N atp -P ~ahaug/wqpass
+work_queue_worker -N atp -P ~ahaug/wqpass
+work_queue_worker -N atp -P ~ahaug/wqpass
+work_queue_worker -N atp -P ~ahaug/wqpass
+work_queue_worker -N atp -P ~ahaug/wqpass
+work_queue_worker -N atp -P ~ahaug/wqpass
+work_queue_worker -N atp -P ~ahaug/wqpass
+work_queue_worker -N atp -P ~ahaug/wqpass
+work_queue_worker -N atp -P ~ahaug/wqpass
 date
