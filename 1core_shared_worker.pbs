@@ -53,14 +53,16 @@
 ### NOTE: /usr/share/Modules/init/csh -CAPITAL M in Modules
 ### source /usr/share/Modules/init/csh
 ### module load blas
-module load python
+### module load python
 
 ### set directory for job execution, ~netid = home directory path
-### cd ~ahaug/
+cd ~netid/
 
 ### run your executable program with begin and end date and time output
 date
-WORKQUEUENAME="atp"
-WORKQUEUEPASS="wqpass"
-work_queue_worker -N $WORKQUEUENAME -P $WORKQUEUEPASS
+WORKQUEUENAME="name"
+WORKQUEUEPASS="pass"
+WORKQUEUETMP="./wqtmp"
+mkdir $WORKQUEUETMP
+work_queue_worker -N $WORKQUEUENAME -P $WORKQUEUEPASS --cores=0 --workdir=$WORKQUEUETMP
 date

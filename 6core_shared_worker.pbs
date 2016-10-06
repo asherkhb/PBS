@@ -51,19 +51,20 @@
 ### Load required modules/libraries if needed (blas example)
 ### Use "module avail" command to list all available modules
 ### NOTE: /usr/share/Modules/init/csh -CAPITAL M in Modules
-###source /usr/share/Modules/init/csh
-###module load blas
-module load python
+### source /usr/share/Modules/init/csh
+### module load blas
+### module load python
 
 ### set directory for job execution, ~netid = home directory path
-cd ~ahaug/mydirectory
+cd ~netid
 
 ### run your executable program with begin and end date and time output
 date
 
 WORKQUEUENAME="ashers test project"
 WORKQUEUEPASS="pwf"
-
-work_queue_worker -N $WORKQUEUENAME -P $WORKQUEUEPASS
+WORKQUEUETMP="./wqtmp"
+mkdir $WORKQUEUETMP
+work_queue_worker -N $WORKQUEUENAME -P $WORKQUEUEPASS --cores=0 --workdir=$WORKQUEUETMP
 
 date
